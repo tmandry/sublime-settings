@@ -1,0 +1,4 @@
+[
+  {"command": "exit_insert_mode"},
+  {"command": "hide_auto_complete"}
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "keys": ["W"],
+    "command": "save",
+    "context":
+    [
+      { "key": "setting.command_mode" },
+      { "key": "setting.is_widget", "operand": false }
+    ]
+  },
+
+  {
+    "keys": ["H"], "command": "set_motion", "args": {
+      "motion": "move_to",
+      "motion_args": {"to": "bol"}
+    },
+    "context": [{"key": "setting.command_mode"}]
+  },
+
+  {
+    "keys": ["L"], "command": "set_motion", "args": {
+      "motion": "move_to",
+      "motion_args": {"to": "eol"}
+    },
+    "context": [{"key": "setting.command_mode"}]
+  },
+
+  { "keys": ["super+k", "super+t"], "command": "toggle_tabs" },
+  { "keys": ["super+k", "super+m"], "command": "toggle_minimap" },
+
+  { "keys": ["super+k", "super+s"], "command": "set_mark" },
+
+  { "keys": ["ctrl+p"], "command": "insert_best_completion", "args": {"default": "\t", "exact": true} },
+  { "keys": ["ctrl+p"], "command": "insert_best_completion", "args": {"default": "\t", "exact": false},
+    "context":
+    [
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["ctrl+p"], "command": "replace_completion_with_next_completion", "context":
+    [
+      { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+      { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+    ]
+  },
+
+  { "keys": ["escape"], "command": "run_macro_file", "args": {"file": "Packages/User/Exit insert mode hiding autocomplete.sublime-macro"},
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": false },
+          { "key": "setting.is_widget", "operand": false },
+          { "key": "setting.vintage_ctrl_keys" }
+      ]
+  }
+]

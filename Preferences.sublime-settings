@@ -6,6 +6,13 @@
 	"font_size": 10.0,
 	"ignored_packages":
 	[
+		"Git",
+		"SublimeLinter",
+		"CoffeeScript",
+		"Capybara Snippets",
+		"LaTeXTools",
+		"Rails",
+		"SublimeREPL"
 	],
 	"ruler":
 	[

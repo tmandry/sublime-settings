@@ -13,8 +13,10 @@
 		"Origami",
 		"Package Control",
 		"SublimeBlockCursor",
+		"SublimeGDB",
 		"SublimeLinter",
 		"SublimeREPL",
-		"WordHighlight"
+		"WordHighlight",
+		"Wrap Plus"
 	]
 }

@@ -7,9 +7,10 @@
 	"ignored_packages":
 	[
 	],
-	"ruler":
+	"rulers":
 	[
-		80
+		80,
+		100
 	],
 	"shift_tab_unindent": true,
 	"tab_size": 2,

@@ -3,11 +3,11 @@
 	"installed_packages":
 	[
 		"Alignment",
-		"AngularJS (CoffeeScript)",
 		"Capybara Snippets",
 		"CoffeeScript",
 		"Gist",
 		"Git",
+		"GoSublime",
 		"HighlightWords",
 		"LaTeXTools",
 		"Origami",
@@ -16,6 +16,7 @@
 		"SublimeGDB",
 		"SublimeLinter",
 		"SublimeREPL",
+		"Vintage-Origami",
 		"WordHighlight",
 		"Wrap Plus"
 	]

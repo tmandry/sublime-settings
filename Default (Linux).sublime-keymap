@@ -20,6 +20,13 @@
       { "key": "selector", "operator": "equal", "operand": "source.go"}
     ]
   },
+  { "keys": ["k","j"], "command": "run_macro_file", "args": {"file": "Packages/User/Save exiting insert mode.sublime-macro"},
+      "context":
+      [
+          { "key": "setting.command_mode", "operand": false },
+          { "key": "setting.is_widget", "operand": false }
+      ]
+  },
 
   {
     "keys": ["H"], "command": "set_motion", "args": {
